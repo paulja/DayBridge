@@ -21,7 +21,7 @@ Here is the initial result:
 
 I think the results are pretty good. In the process of doing this I’ve grown to really like their concept and I'm looking forward to being able to use their app when it's released.
 
-As is often the case when doing something like this some things go well and others are a real challenge. When I first saw the designs I wanted to build a pure SwiftUI design, no other support files or assets. Immediately I thought how I could achieve the interesting gradients at the top and bottom of their column design. A `ZStack` with a couple of overlaid `LinearGeadient`’s, that approach appears to have been very successful.
+As is often the case when doing something like this some things go well and others are a real challenge. When I first saw the designs I wanted to build a pure SwiftUI design, no other support files or assets. Immediately I thought how I could achieve the interesting gradients at the top and bottom of their column design. A `ZStack` with a couple of overlaid `LinearGeadient`’s, that approach appears to have been very successful (NOTE: I have now improved this by using a `mask` to get an excellent effect in both *light* and *dark* modes).
 
 ![](Images/gradients.png)
 

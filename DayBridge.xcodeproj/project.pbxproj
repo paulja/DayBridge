@@ -7,20 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA7552D825D7F3E200BCF757 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7552D725D7F3E200BCF757 /* DayView.swift */; };
+		DA7552DC25D7F57200BCF757 /* MorningGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7552DB25D7F57200BCF757 /* MorningGradient.swift */; };
+		DA7552DF25D7F5E700BCF757 /* EveningGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7552DE25D7F5E700BCF757 /* EveningGradient.swift */; };
+		DA9393B525D841DA004AEA02 /* Color+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9393B425D841DA004AEA02 /* Color+Helpers.swift */; };
+		DA9393B825D841FE004AEA02 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9393B725D841FE004AEA02 /* TextStyle.swift */; };
+		DA9393BB25D8422A004AEA02 /* Text+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9393BA25D8422A004AEA02 /* Text+Helpers.swift */; };
 		DAC0041125D6C6530084ADB6 /* Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0041025D6C6530084ADB6 /* Lines.swift */; };
 		DAFE27AA25D5A84B002F856C /* DayBridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE27A925D5A84B002F856C /* DayBridgeApp.swift */; };
 		DAFE27AC25D5A84B002F856C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE27AB25D5A84B002F856C /* ContentView.swift */; };
 		DAFE27AE25D5A84C002F856C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFE27AD25D5A84C002F856C /* Assets.xcassets */; };
-		DAFE27B125D5A84C002F856C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFE27B025D5A84C002F856C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA7552D725D7F3E200BCF757 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		DA7552DB25D7F57200BCF757 /* MorningGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningGradient.swift; sourceTree = "<group>"; };
+		DA7552DE25D7F5E700BCF757 /* EveningGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningGradient.swift; sourceTree = "<group>"; };
+		DA9393B425D841DA004AEA02 /* Color+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Helpers.swift"; sourceTree = "<group>"; };
+		DA9393B725D841FE004AEA02 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		DA9393BA25D8422A004AEA02 /* Text+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Helpers.swift"; sourceTree = "<group>"; };
 		DAC0041025D6C6530084ADB6 /* Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lines.swift; sourceTree = "<group>"; };
 		DAFE27A625D5A84B002F856C /* DayBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFE27A925D5A84B002F856C /* DayBridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayBridgeApp.swift; sourceTree = "<group>"; };
 		DAFE27AB25D5A84B002F856C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DAFE27AD25D5A84C002F856C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DAFE27B025D5A84C002F856C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DAFE27B225D5A84C002F856C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +45,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA4DA7F425D7F1E2007BDE02 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DA7552CF25D7F32300BCF757 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DAC0041025D6C6530084ADB6 /* Lines.swift */,
+				DA9393B725D841FE004AEA02 /* TextStyle.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		DA7552D125D7F35A00BCF757 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DAFE27B225D5A84C002F856C /* Info.plist */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DA9393BE25D84C4E004AEA02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA9393B425D841DA004AEA02 /* Color+Helpers.swift */,
+				DA9393BA25D8422A004AEA02 /* Text+Helpers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DA9393BF25D84C66004AEA02 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				DA9393C025D84C72004AEA02 /* Day */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		DA9393C025D84C72004AEA02 /* Day */ = {
+			isa = PBXGroup;
+			children = (
+				DA7552D725D7F3E200BCF757 /* DayView.swift */,
+				DA7552DB25D7F57200BCF757 /* MorningGradient.swift */,
+				DA7552DE25D7F5E700BCF757 /* EveningGradient.swift */,
+			);
+			path = Day;
+			sourceTree = "<group>";
+		};
 		DAFE279D25D5A84B002F856C = {
 			isa = PBXGroup;
 			children = (
@@ -54,22 +115,16 @@
 		DAFE27A825D5A84B002F856C /* DayBridge */ = {
 			isa = PBXGroup;
 			children = (
+				DA7552D125D7F35A00BCF757 /* Core */,
+				DA9393BF25D84C66004AEA02 /* Activities */,
+				DA7552CF25D7F32300BCF757 /* Shared */,
+				DA9393BE25D84C4E004AEA02 /* Extensions */,
+				DA4DA7F425D7F1E2007BDE02 /* Data */,
 				DAFE27A925D5A84B002F856C /* DayBridgeApp.swift */,
 				DAFE27AB25D5A84B002F856C /* ContentView.swift */,
-				DAC0041025D6C6530084ADB6 /* Lines.swift */,
 				DAFE27AD25D5A84C002F856C /* Assets.xcassets */,
-				DAFE27B225D5A84C002F856C /* Info.plist */,
-				DAFE27AF25D5A84C002F856C /* Preview Content */,
 			);
 			path = DayBridge;
-			sourceTree = "<group>";
-		};
-		DAFE27AF25D5A84C002F856C /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				DAFE27B025D5A84C002F856C /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +184,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAFE27B125D5A84C002F856C /* Preview Assets.xcassets in Resources */,
 				DAFE27AE25D5A84C002F856C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +195,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA9393B825D841FE004AEA02 /* TextStyle.swift in Sources */,
+				DA7552DF25D7F5E700BCF757 /* EveningGradient.swift in Sources */,
+				DA7552DC25D7F57200BCF757 /* MorningGradient.swift in Sources */,
 				DAFE27AC25D5A84B002F856C /* ContentView.swift in Sources */,
+				DA9393B525D841DA004AEA02 /* Color+Helpers.swift in Sources */,
+				DA7552D825D7F3E200BCF757 /* DayView.swift in Sources */,
 				DAC0041125D6C6530084ADB6 /* Lines.swift in Sources */,
+				DA9393BB25D8422A004AEA02 /* Text+Helpers.swift in Sources */,
 				DAFE27AA25D5A84B002F856C /* DayBridgeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,10 +332,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"DayBridge/Preview Content\"";
-				DEVELOPMENT_TEAM = SEBFRC3FBZ;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7F42FDQ9R9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DayBridge/Info.plist;
+				INFOPLIST_FILE = DayBridge/Core/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -294,10 +354,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"DayBridge/Preview Content\"";
-				DEVELOPMENT_TEAM = SEBFRC3FBZ;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7F42FDQ9R9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = DayBridge/Info.plist;
+				INFOPLIST_FILE = DayBridge/Core/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

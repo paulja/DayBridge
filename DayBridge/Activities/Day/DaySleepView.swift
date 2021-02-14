@@ -1,8 +1,8 @@
 //
-//  EveningGradient.swift
+//  DaySleepView.swift
 //  DayBridge
 //
-//  Created by Paul Jackson on 13/02/2021.
+//  Created by Paul Jackson on 14/02/2021.
 //
 
 import SwiftUI
@@ -32,18 +32,28 @@ struct EveningGradient: View {
     }
 }
 
-struct EveningGradient_Previews: PreviewProvider {
-    static var previews: some View {
-        VStack {
-            Text("Scroll down to see gradient preview...")
-                .font(.caption)
-                .italic()
-                .foregroundColor(.secondary)
-                .padding(.top, 100)
-            Spacer()
-            EveningGradient()
-                .frame(height: 100)
+
+struct DaySleepView: View {
+    var body: some View {
+        ZStack {
+            HStack {
+                Text("11:00 PM")
+                    .padding(.trailing, -10)
+                Image(systemName: "moon.zzz.fill")
+                    .padding(.leading)
+                Text("Go to sleep")
+                Spacer()
+            }.offset(y: -16)
         }
-        .ignoresSafeArea()
+        .foregroundColor(.appPurple)
+        .font(.footnote)
+        .padding()
+        .background(EveningGradient())
+    }
+}
+
+struct DaySleepView_Previews: PreviewProvider {
+    static var previews: some View {
+        DaySleepView()
     }
 }

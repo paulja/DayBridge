@@ -7,26 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA5129AC25D94A9700E735AC /* DayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5129AB25D94A9700E735AC /* DayHeaderView.swift */; };
+		DA5129B025D94F1E00E735AC /* DayWakeUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5129AF25D94F1E00E735AC /* DayWakeUpView.swift */; };
+		DA5129B725D977E200E735AC /* DayBlockOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5129B625D977E200E735AC /* DayBlockOutView.swift */; };
 		DA7552D825D7F3E200BCF757 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7552D725D7F3E200BCF757 /* DayView.swift */; };
-		DA7552DC25D7F57200BCF757 /* MorningGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7552DB25D7F57200BCF757 /* MorningGradient.swift */; };
-		DA7552DF25D7F5E700BCF757 /* EveningGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7552DE25D7F5E700BCF757 /* EveningGradient.swift */; };
 		DA9393B525D841DA004AEA02 /* Color+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9393B425D841DA004AEA02 /* Color+Helpers.swift */; };
 		DA9393B825D841FE004AEA02 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9393B725D841FE004AEA02 /* TextStyle.swift */; };
 		DA9393BB25D8422A004AEA02 /* Text+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9393BA25D8422A004AEA02 /* Text+Helpers.swift */; };
 		DAC0041125D6C6530084ADB6 /* Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC0041025D6C6530084ADB6 /* Lines.swift */; };
+		DAFABAB625D9949400B67ECE /* DayActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFABAB525D9949400B67ECE /* DayActivityView.swift */; };
+		DAFABABA25D9960E00B67ECE /* DayTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFABAB925D9960E00B67ECE /* DayTaskView.swift */; };
+		DAFABABD25D996CC00B67ECE /* DaySleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFABABC25D996CC00B67ECE /* DaySleepView.swift */; };
 		DAFE27AA25D5A84B002F856C /* DayBridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE27A925D5A84B002F856C /* DayBridgeApp.swift */; };
 		DAFE27AC25D5A84B002F856C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFE27AB25D5A84B002F856C /* ContentView.swift */; };
 		DAFE27AE25D5A84C002F856C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFE27AD25D5A84C002F856C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA5129AB25D94A9700E735AC /* DayHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayHeaderView.swift; sourceTree = "<group>"; };
+		DA5129AF25D94F1E00E735AC /* DayWakeUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWakeUpView.swift; sourceTree = "<group>"; };
+		DA5129B625D977E200E735AC /* DayBlockOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayBlockOutView.swift; sourceTree = "<group>"; };
 		DA7552D725D7F3E200BCF757 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
-		DA7552DB25D7F57200BCF757 /* MorningGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningGradient.swift; sourceTree = "<group>"; };
-		DA7552DE25D7F5E700BCF757 /* EveningGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningGradient.swift; sourceTree = "<group>"; };
 		DA9393B425D841DA004AEA02 /* Color+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Helpers.swift"; sourceTree = "<group>"; };
 		DA9393B725D841FE004AEA02 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		DA9393BA25D8422A004AEA02 /* Text+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Helpers.swift"; sourceTree = "<group>"; };
 		DAC0041025D6C6530084ADB6 /* Lines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lines.swift; sourceTree = "<group>"; };
+		DAFABAB525D9949400B67ECE /* DayActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayActivityView.swift; sourceTree = "<group>"; };
+		DAFABAB925D9960E00B67ECE /* DayTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTaskView.swift; sourceTree = "<group>"; };
+		DAFABABC25D996CC00B67ECE /* DaySleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySleepView.swift; sourceTree = "<group>"; };
 		DAFE27A625D5A84B002F856C /* DayBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAFE27A925D5A84B002F856C /* DayBridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayBridgeApp.swift; sourceTree = "<group>"; };
 		DAFE27AB25D5A84B002F856C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,8 +98,12 @@
 			isa = PBXGroup;
 			children = (
 				DA7552D725D7F3E200BCF757 /* DayView.swift */,
-				DA7552DB25D7F57200BCF757 /* MorningGradient.swift */,
-				DA7552DE25D7F5E700BCF757 /* EveningGradient.swift */,
+				DA5129AB25D94A9700E735AC /* DayHeaderView.swift */,
+				DA5129AF25D94F1E00E735AC /* DayWakeUpView.swift */,
+				DA5129B625D977E200E735AC /* DayBlockOutView.swift */,
+				DAFABAB525D9949400B67ECE /* DayActivityView.swift */,
+				DAFABAB925D9960E00B67ECE /* DayTaskView.swift */,
+				DAFABABC25D996CC00B67ECE /* DaySleepView.swift */,
 			);
 			path = Day;
 			sourceTree = "<group>";
@@ -195,14 +207,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5129B725D977E200E735AC /* DayBlockOutView.swift in Sources */,
+				DAFABABD25D996CC00B67ECE /* DaySleepView.swift in Sources */,
 				DA9393B825D841FE004AEA02 /* TextStyle.swift in Sources */,
-				DA7552DF25D7F5E700BCF757 /* EveningGradient.swift in Sources */,
-				DA7552DC25D7F57200BCF757 /* MorningGradient.swift in Sources */,
 				DAFE27AC25D5A84B002F856C /* ContentView.swift in Sources */,
 				DA9393B525D841DA004AEA02 /* Color+Helpers.swift in Sources */,
+				DAFABABA25D9960E00B67ECE /* DayTaskView.swift in Sources */,
 				DA7552D825D7F3E200BCF757 /* DayView.swift in Sources */,
+				DA5129B025D94F1E00E735AC /* DayWakeUpView.swift in Sources */,
 				DAC0041125D6C6530084ADB6 /* Lines.swift in Sources */,
 				DA9393BB25D8422A004AEA02 /* Text+Helpers.swift in Sources */,
+				DA5129AC25D94A9700E735AC /* DayHeaderView.swift in Sources */,
+				DAFABAB625D9949400B67ECE /* DayActivityView.swift in Sources */,
 				DAFE27AA25D5A84B002F856C /* DayBridgeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

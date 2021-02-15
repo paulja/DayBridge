@@ -78,7 +78,7 @@ struct DayView: View {
                             title: "Hair cut",
                             image: "scissors",
                             startTime: "6:40 PM", endTime: "7:40 PM", duration: "1h",
-                            color: .appOrange,
+                            color: .appDarkOrange,
                             backgroundColor: .appUltraLightBackground,
                             location: "Covent Garden"
                         )

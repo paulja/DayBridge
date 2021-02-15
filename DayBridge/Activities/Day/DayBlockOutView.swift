@@ -27,7 +27,7 @@ struct DayBlockOutView: View {
                     foreground: Color.appMediumBackground,
                     lineWidth: 5.0,
                     lineSpacing: 5.0,
-                    degrees: 45
+                    angle: 45
                 )
             )
         } else {
@@ -66,13 +66,13 @@ struct DayBlockOutView: View {
                     Text(startTime)
                         .textStyle(NormalTextStyle())
                     Image(systemName: "arrow.right")
-                        .foregroundColor(.appDarkBackground)
+                        .foregroundColor(TextStyleDefaults.color)
                         .font(.caption)
                     Text(endTime!)
                         .textStyle(NormalTextStyle())
                     Text(duration ?? "")
                         .font(.caption)
-                        .foregroundColor(.appDarkBackground)
+                        .foregroundColor(TextStyleDefaults.color)
                 }
             }
         }
@@ -101,7 +101,7 @@ struct DayBlockOutView: View {
                 Image(systemName: "location.fill")
                     .foregroundColor(.appDarkBackground)
                 Text(location)
-                    .foregroundColor(TextStyleDefaults.color)
+                    .foregroundColor(.appDarkBackground)
             }
             .font(.caption)
             .padding(EdgeInsets(top: 4, leading: 10, bottom: 4, trailing: 10))

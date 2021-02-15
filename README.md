@@ -19,9 +19,13 @@ Here is the initial result:
 
 ![](Images/day-view.png)
 
+And now with *DarkMode* too:
+
+![](Images/day-view-darkmode.png)
+
 I think the results are pretty good. In the process of doing this I’ve grown to really like their concept and I'm looking forward to being able to use their app when it's released.
 
-As is often the case when doing something like this some things go well and others are a real challenge. When I first saw the designs I wanted to build a pure SwiftUI design, no other support files or assets. Immediately I thought how I could achieve the interesting gradients at the top and bottom of their column design. A `ZStack` with a couple of overlaid `LinearGeadient`’s, that approach appears to have been very successful (NOTE: I have now improved this by using a `mask` to get an excellent effect in both *light* and *dark* modes).
+As is often the case when doing something like this some things go well and others are a real challenge. When I first saw the designs I wanted to build a pure SwiftUI design, no other support files or assets. Immediately I thought how I could achieve the interesting gradients at the top and bottom of their column design. A  `LinearGeadient`, with another gradient as a mask.
 
 ![](Images/gradients.png)
 
@@ -39,8 +43,8 @@ I’m really taken with what the people at DayBridge trying to build, unfortunat
 
 However, there are a few things I can do that do not require too much in the way of a set of new designs:
 
-- Add support for Dark Mode
-- Refactor the project layout
+- Add support for Dark Mode (done! ✅)
+- Refactor the project layout (done! ✅)
 - Make the UI data driven
 
 Dark mode pretty simple, as my implementation has a few *magic* numbers and colours; I simply need to define those and extract them. The project is essentially two files at the time of creating the project, so the idea here is to create a maintainable project layout and give the views their own files and so on. As for the data driven element, I could use CoreData to persist the data, or use a real calendar, maps and a ToDo list from somewhere, such a Google; but, it think I will try CoreData and Apple Maps to start with and see where that takes me. 

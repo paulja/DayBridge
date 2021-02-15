@@ -10,20 +10,20 @@ import SwiftUI
 struct LinesConfig {
     var background, foreground: Color
     var lineWidth, lineSpacing: CGFloat
-    var degrees: Double
+    var angle: Double
 
     public init(
         background: Color = Color.black.opacity(0.5),
         foreground: Color = Color.black.opacity(0.8),
         lineWidth: CGFloat = 20,
         lineSpacing: CGFloat = 20,
-        degrees: Double = 45) {
+        angle: Double = 45) {
 
         self.background = background
         self.foreground = foreground
         self.lineWidth = lineWidth
         self.lineSpacing = lineSpacing
-        self.degrees = degrees
+        self.angle = angle
     }
 }
 
@@ -47,7 +47,7 @@ struct Lines: View {
                 }
             }
             .background(config.background)
-            .rotationEffect(Angle(degrees: config.degrees), anchor: .center)
+            .rotationEffect(Angle(degrees: config.angle), anchor: .center)
             .offset(x: -size / 2, y: -size / 2)
         }
         .clipped()

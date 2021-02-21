@@ -11,7 +11,7 @@
 
 I recently came across the [DayBridge calendar](https://daybridge.com) concept application, which is something they are building right now.
 
-I liked the concept so much I thought I would spend a couple of hours and see how far I could get using their mobile design but with SwiftUI, just for learning and too see how far I could get. 
+I liked the concept so much I thought I would spend a couple of hours and see how far I could get using their mobile design in SwiftUI, mainly for learning purposes and too see how far I could get in that limited time. 
 
 **All credit for the design and concept belong to DayBridge**, however, the implementation is all my own work.
 
@@ -23,47 +23,36 @@ And now with *DarkMode* too:
 
 ![](Images/day-view-darkmode.png)
 
-I think the results are pretty good. In the process of doing this I’ve grown to really like their concept and I'm looking forward to being able to use their app when it's released.
+I think the results are pretty good.
 
-As is often the case when doing something like this some things go well and others are a real challenge. When I first saw the designs I wanted to build a pure SwiftUI design, no other support files or assets. Immediately I thought how I could achieve the interesting gradients at the top and bottom of their column design. A  `LinearGeadient`, with another gradient as a mask.
+As is often the case when doing something like this some things go well and others are a real challenge. I wanted to build a pure SwiftUI implementation, no other support files or assets. Immediately I thought how I could achieve the interesting gradients at the top and bottom of their column design. A  `LinearGeadient`, with another gradient as a mask.
 
 ![](Images/gradients.png)
 
 ![](Images/gradients-code.png)
 
-Conversely, I never expected the chevron backgrounds—which appears to model times where you might not be contactable—would be the surprise challenge. The approach I ended up taking was to create a stack of lines and rotate them as needed. This worked out really well, and is a completely reuable component within the application.
+Conversely, I never expected the chevron backgrounds—which appears to model times where you might not be contactable—would be the surprise challenge. The approach I ended up taking was to create a stack of lines and rotate them as needed. This worked out really well, and is a completely reusable component within the application, and now other applications too.
 
 ![](Images/lines.png)
 
-This approach works because in SwiftUI `Color` is a `View`. I know this is not a chevron as shown in the orginial design, but I think I have captured the same message if not in exactly the same way. Real-world design-to-implementation often goes that way.
+This approach works because in SwiftUI `Color` is a `View`. I know this is not a chevron as shown in the original design, but I think I have captured the same *intent* just not in the same way. In Real-world design-to-implementation it often goes that way.
 
-## Next Steps
+## Design
+There is not too much more I can get from their designs on their website for this experiment; if I want to do more on this I’m going to have to use my imagination and extrapolate what I think it will look.
 
-I’m really taken with what the people at DayBridge trying to build, unfortunately for me, there is not too much more I can get from their designs on their website. If I want to do more on this I’m going to have to use my imagination and extrapolate what I think it will look.
+No offence to the people at DayBridge, while I'm a fan of the concept, I'm not really of the design approach they have taken. In my opinion, as an app designer, their design is dated and has a real "web" focus; it does not attempt to be of-the-device or the iOS platform.
 
-However, there are a few things I can do that do not require too much in the way of a set of new designs:
-
-- Add support for Dark Mode (done! ✅)
-- Refactor the project layout (done! ✅)
-- Make the UI data driven
-
-Dark mode pretty simple, as my implementation has a few *magic* numbers and colours; I simply need to define those and extract them. The project is essentially two files at the time of creating the project, so the idea here is to create a maintainable project layout and give the views their own files and so on. As for the data driven element, I could use CoreData to persist the data, or use a real calendar, maps and a ToDo list from somewhere, such a Google; but, it think I will try CoreData and Apple Maps to start with and see where that takes me. 
-
-Finally, as I've said the DayBridge website does not give me too many hints on the feel for the whole design concept, so I will put on my designer hat and imagine how I think the views could look leading to this view I have already modelled, and then, when they release, I can see how close I got to their concept!
-
-👍
+Therefore, at some point, as a new experiment I will update the design for this concept to be more modern and fit for an iOS device in today's AppStore. My plan here would be to explore a more Neumorphic design style, as I'm interested in exploring what challenges there could waiting for me when making something like this in both light and dark mode in that style.
 
 ## About Me
+I have over 20 years of experience designing and building software for a living. My speciality is user interface design and development for mobile, specifically for the Apple ecosystem. I have been working with iOS since iOS6, initially with Objective-C and more recently with Swift and now SwiftUI. I have a proven track record of taking applications from concept to robust, scalable and secure applications, delivered and published through the AppStore. Within the last 5 years I have put over 30+ iOS and iPadOS apps successfully through the AppStore.
 
-I have 20+ years of building software for a living, from Enterprise business apps, services and portals to mobile games and lots in between. I have personal experience of getting over 30+ iPhone and iPad apps through the AppStore process, having developed apps myself since iOS 6 onwards, initially with Objective-C and more recently with Swift and now SwiftUI.
-
-My focus is user interface design and development for mobile, however, I have extensive experience building backend APIs for mobile services, typically written in Swift or Go (golang), with JSON messaging or REST based depending on the needs of the consumer and service. Hosted in various ways from self hosting, PaaS, IaaS or Lambda, experience with various hosting platforms including AWS, IBM, Digital Ocean and others. Backed by numerous datastore solutions including relational databases, ElasticSearch, CouchDB, Redis and other, where security and performance is my primary focus.
+I work for companies large and small, as well as one-man-bands and start-ups, helping to make their ideas a reality. As an Architect I have extensive experience building backend services to support the mobile apps. I have used various languages over the years to build the services, but these days more typically in use Swift or Go (golang), with JSON messaging or REST based depending on the needs of the App features. Hosted in various ways from self hosting, PaaS, IaaS or Lambda. I have hands-on experience with various hosting platforms including iCloud, AWS, IBM, Digital Ocean and more, where security and performance is my primary focus.
 
 ## License
-
 As this a learning project for me I would be really happy if anyone gets anything useful from the code. All the source code that is in this project is licensed under the MIT license. To be clear, this is any file that has the “.swift” file extension. Additionally, I have written all the code myself and have **not** used any code directly from any other sources.
 
-The concept and design are Copyright © 2020 Daybridge. This project has been created without the premission or knowledge of DayBridge; any mistakes, omissions or errors are mine.
+The concept and design are Copyright © 2020 DayBridge. This project has been created without the permission or knowledge of DayBridge; any mistakes, omissions or errors are mine.
 
 Here is the MIT license:
 
